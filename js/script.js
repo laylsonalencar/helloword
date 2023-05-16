@@ -17,3 +17,7 @@ function soma(n1, n2) {
    alert("olá," + nome)
    
  }
+ function area(base, altura) {
+    let area = base * altura 
+    alert(area )
+ }

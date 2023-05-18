@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="js/script.js"></script>
-    <title>hello word Js</title>
+  <title>Calculadora</title>
+  <script src="/js/script.js"></script>
 </head>
 <body>
-    <button onclick="soma(3,2)">soma</button>
-    <button onclick="subtração(3,2)">subtração</button>
-    <button onclick="multiplicacão(3,2)">multiplicação</buttom>
-    <button onclick="divisão(3,2)">divisão</button>
-    <button onclick="mostrarnome()">mostrar nome</button>
-    <button onclick="retanculo"></button>
-    
+  <h1>Calculadora</h1>
+
+  <h2>1- Calcular a área de um círculo</h2>
+  <label for="raio">Raio:</label>
+  <input type="number" id="raio">
+  <button onclick="calcularAreaCirculo()">Calcular</button>
+  <p id="areaCirculo"></p>
+
+  <h2>2- Calcular a hipotenusa de um triângulo-retângulo</h2>
+  <label for="catetoOposto">Cateto Oposto:</label>
+  <input type="number" id="catetoOposto">
+  <label for="catetoAdjacente">Cateto Adjacente:</label>
+  <input type="number" id="catetoAdjacente">
+  <button onclick="calcularHipotenusa()">Calcular</button>
+  <p id="hipotenusa"></p>
+
+  <h2>3- Converter um valor em reais para dólares</h2>
+  <label for="valorReais">Valor em Reais:</label>
+  <input type="number" id="valorReais">
+  <button onclick="converterParaDolares()">Converter</button>
+  <p id="valorDolares"></p>
+
+  <h2>4- Converter uma temperatura em graus Celsius para graus Fahrenheit</h2>
+  <label for="temperaturaCelsius">Temperatura em Celsius:</label>
+  <input type="number" id="temperaturaCelsius">
+  <button onclick="converterParaFahrenheit()">Converter</button>
+  <p id="temperaturaFahrenheit"></p>
+
+  <h2>5- Calcular a média aritmética entre 3 notas</h2>
+  <label for="nota1">Nota 1:</label>
+  <input type="number" id="nota1">
+  <label for="nota2">Nota 2:</label>
+  <input type="number" id="nota2">
+  <label for="nota3">Nota 3:</label>
+  <input type="number" id="nota3">
+  <button onclick="calcularMedia()">Calcular</button>
+  <p id="media"></p>
+
+  <h2>6- Calcular as raízes de uma equação do segundo grau</h2>
+  <label for="valorA">Valor de A:</label>
+  <input type="number" id="valorA">
+  <label for="valorB">Valor de B:</label>
+  <input type="number" id="valorB">
+  <label for="valorC">Valor de C:</label>
+  <input type="number" id="valorC">
+  <button onclick="calcularRaizes()">Calcular</button>
+  <p id="raizes"></p>
 </body>
 </html>
